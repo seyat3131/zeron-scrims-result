@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERON ORGANİZASYON - Puan Durumu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>ZERON ORGANİZASYON</h1>
+        </div>
+        <div class="header-right">
+            <span id="live-date"></span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="scoreboard">
+            <div class="table-header">
+                <span class="rank-col">RANK</span>
+                <span class="team-col">TEAM NAME</span>
+                <span class="total-col">TOTAL</span>
+                <span class="rank-col">RANK</span>
+                <span class="team-col">TEAM NAME</span>
+                <span class="total-col">TOTAL</span>
+            </div>
+            
+            <div id="score-rows">
+                </div>
+        </div>
+
+        <div class="admin-panel">
+            <h2>Yönetici Düzenleme Alanı</h2>
+            <button id="toggle-edit-mode">Düzenleme Modunu Aç / Kapat</button>
+            <p class="warning">
+                UYARI: Düzenleme modu açıldığında, kutucuklara yeni değerler yazıp 
+                "Kaydet" butonuna basmanız gerekir. Kaydetmek için: <button id="save-data">Verileri Kaydet (Canlı Güncelle)</button>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
