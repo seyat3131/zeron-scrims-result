@@ -1,0 +1,116 @@
+/* Genel Stil ve Dark Tema */
+body {
+    background-color: #000000;
+    color: #ffd700; /* Altın sarısı, Zeron görseline uygun */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1a1a1a;
+    border-bottom: 2px solid #ffd700;
+}
+
+.header-left h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.header-right {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px 40px;
+}
+
+/* Puan Durumu Tablosu Stili */
+.scoreboard {
+    width: 100%;
+    border: 2px solid #ffd700;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.table-header, .score-row {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-header {
+    background-color: #2c2c2c;
+    border-bottom: 1px solid #ffd700;
+}
+
+/* Kolon Genişlikleri ve Çizgiler */
+.rank-col, .team-col, .total-col {
+    padding: 10px 5px;
+    flex-grow: 1;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.team-col { flex-basis: 35%; max-width: 35%; }
+.rank-col { flex-basis: 10%; max-width: 10%; }
+.total-col { flex-basis: 20%; max-width: 20%; }
+
+/* Simetrik Çizgilerle Bölme */
+.score-row {
+    border-bottom: 1px solid #333; /* Yatay çizgiler */
+}
+
+.score-row:nth-child(even) {
+    background-color: #0d0d0d;
+}
+
+.score-cell {
+    padding: 10px 5px;
+    border-right: 1px solid #333; /* Dikey çizgiler */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Düzenleme Alanı */
+.admin-panel {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.admin-panel button {
+    padding: 10px 15px;
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.admin-panel .warning {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* Düzenlenebilir Kutucuk Stili */
+.editable {
+    outline: 2px solid #ff0000; /* Düzenlenebilir olduğunu gösteren kırmızı çerçeve */
+    cursor: text;
+    background-color: #000;
+    color: #ffd700;
+}
